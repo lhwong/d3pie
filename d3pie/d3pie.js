@@ -1222,7 +1222,7 @@ var labels = {
 
 	isLabelHidden: function(pie, index) {
 		var percentage = pie.options.labels.outer.hideWhenLessThanPercentage;
-		return (percentage !== null && d.percentage < percentage) || pie.options.data.content[index].label === "";
+		return (percentage !== null && pie.options.data.content[index].percentage < percentage) || pie.options.data.content[index].label === "";
 	},
 
 	// does a little math to shift a label into a new position based on the last properly placed one
